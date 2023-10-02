@@ -36,4 +36,4 @@ jobs:
 
       - name: Run web test
         timeout-minutes: 10
-        run: mvn clean test -Punit-test 
+        run: mvn clean install
