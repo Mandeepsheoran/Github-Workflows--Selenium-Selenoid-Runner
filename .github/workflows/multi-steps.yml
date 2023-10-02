@@ -20,7 +20,7 @@ jobs:
   build:
     name: run-multi-steps
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: Checkout code from workspace
@@ -37,4 +37,7 @@ jobs:
 
       - name: Run test
         timeout-minutes: 10
-        run: mvn clean test 
+        shell: powershell
+        run: |
+         mvn -v 
+         mvn clean test 
