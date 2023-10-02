@@ -24,6 +24,7 @@ jobs:
 
     steps:
       - name: Checkout code from workspace
+        if: ${{ github.actor=Mandeepsheoran}}
         uses: actions/checkout@v2
         timeout-minutes: 10
         with:
